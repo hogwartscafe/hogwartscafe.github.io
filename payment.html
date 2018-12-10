@@ -1,0 +1,273 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Hogwarts Cafe</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Snacks Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/smoothbox.css" type='text/css' media="all" />
+	<!-- gallery light box -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
+	    rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext"
+	    rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+</head>
+
+<body>
+	<!-- header -->
+
+
+	<!-- about -->
+	<div class="about py-5" id="about" style="font-family: papyrus">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="title text-center text-dark mb-sm-5 mb-4">
+				<span style="font-family: papyrus">Your Cart</span></h3>
+			<div class="row about-bottom-w3l text-center pt-lg-5">
+				<div class="col-sm-6 about-grid">
+					<div class="about-grid-main">
+						<table class="table">
+                            <thead>
+                              <tr>
+                                  <th scope="col">Sr No.</th>
+                                <th scope="col">Items</th>
+                                <th scope="col">Payment</th>
+                              </tr>
+                            </thead>
+                            <tbody id="cartTable">
+
+                            <!--JS Code-->
+                            </tbody>
+                          </table>
+					</div>
+				</div>
+				<div class="col-sm-6 about-grid mt-sm-0 mt-4">
+                    <div class="about-grid-main">
+						<h4 class="mb-3" style="font-family: papyrus; color:black;font-size: 26px;">Pay Us through
+								<i class="fas fa-long-arrow-alt-right ml-3"></i> </h4>
+                        <img src="images/QR.png" alt="" class="img-fluid">	<!--QR code-->
+                        <h4 style="font-family: papyrus; color:black;">+91-8602587838</h4>				<!--contact number--> 
+                        <!-- <a href="#" class="button-w3ls mt-4" data-toggle="modal" data-target="#exampleModalCenter1">Read More
+                            <i class="fas fa-long-arrow-alt-right ml-3"></i>
+                        </a> -->
+                    </div>
+                </div>
+			</div>
+			
+			<button  onclick="getSelectedCheckboxes()" class="btn btn-danger" id="btn_test" style="position: absolute; left: 50%;
+			transform: translateX(-50%); margin-top: 10px;"> 
+					Copy Cart to Clipboard
+			</button>
+		</div>
+		
+	</div>
+	<!-- //about -->
+	
+
+	<!-- footer -->
+	<footer class="pt-5">
+			<div class="container py-xl-5 py-lg-3">
+				<div class="row footer-grids py-4">
+					<div class="col-lg-4 footer-grid text-left">
+						<div class="footer-logo">
+							<h2 class="mb-3">
+								<a class="logo text-white" href="index.html">
+										<img src="images/hogwartsLogo.jpg" alt="" class="img-fluid" 
+										style="border-radius: 50%; height: 75px; width: 75px;"> Hogwarts Cafe</a>
+							</h2>
+						</div>
+					</div>
+					<div class="col-lg-2 col-6 footer-grid"></div>
+					<div class="col-lg-2 col-6 footer-grid"></div>
+					<div class="col-lg-2 col-6  footer-grid my-lg-0 my-4">
+						<h3 class="mb-sm-4 mb-3 pb-3">Home</h3>
+						<ul class="list-unstyled">
+							<li>
+								<a href="index.html">Index</a>
+							</li>
+							<li class="my-2">
+								<a class="scroll" href="#about">About</a>
+							</li>
+							<li class="my-2">
+								<a class="scroll" href="#gallery">Gallery</a>
+							</li>
+							<li>
+								<a class="scroll" href="#contact">Contact Us</a>
+							</li>
+						</ul>
+					</div>				
+					<div class="col-lg-2 col-6 footer-grid footer-contact">
+						<h3 class="mb-sm-4 mb-3 pb-3"> Contact Us</h3>
+						<ul class="list-unstyled">
+							<li>
+								086025 87838			<!--contact number-->
+							</li>
+							<li class="mt-2">
+								<a href="https://www.instagram.com/cafehogwarts/">@cafehogwarts</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- copyright -->
+			<div class="copy_right">
+				<p class="text-center text-white py-sm-4 py-3">©2018. All rights reserved | Design by
+					<a href="https://www.linkedin.com/in/arpit621/"> Arpit </a> and <a href="https://www.linkedin.com/in/chauhannishh/"> Nishi </a>
+				</p>
+	
+			</div>
+			<!-- //copyright -->
+	</footer>
+	<!-- //footer -->
+
+    <script>
+            var retrievedObject = localStorage.getItem('testObject');
+            retrievedObject = JSON.parse(retrievedObject);
+            var count = 1;
+            var cpingText = "";
+            var totalPrice = 0;
+           	for (var key in retrievedObject) {
+   			if (retrievedObject.hasOwnProperty(key)) {
+				var input = "<tr><td scope='row'>"+count+"</td><td>"+key+"</td><th>"+retrievedObject[key]+"</th></tr>";
+				cpingText += count + "." + key + " "
+				count++;
+				totalPrice += parseInt(retrievedObject[key]);
+				document.getElementById('cartTable').insertAdjacentHTML('beforeend', input);
+        		}
+    		}
+			var estimatedTime = 0 + count*5 -5;     
+			var zinput = "<tr><td></td><td>Total: </td><th>"+totalPrice+"</th></tr>";
+			document.getElementById('cartTable').insertAdjacentHTML('beforeend', zinput);
+			var zainput = "<tr><td></td><td>Estimated Time: </td><th>"+estimatedTime+" minutes</th></tr>";
+			document.getElementById('cartTable').insertAdjacentHTML('beforeend', zainput);
+			console.log(cpingText);
+
+function getSelectedCheckboxes(chkboxName) {
+
+  // Create a dummy input to copy the string array inside it
+  var dummy = document.createElement("input");
+
+  // Add it to the document
+  document.body.appendChild(dummy);
+
+  // Set its ID
+  dummy.setAttribute("id", "dummy_id");
+
+  // Output the array into it
+  document.getElementById("dummy_id").value=cpingText;
+
+  // Select it
+  dummy.select();
+
+  // Copy its contents
+  document.execCommand("copy");
+
+  // Remove it as its not needed anymore
+  document.body.removeChild(dummy);
+}
+        </script>
+	<!-- Js files -->
+	<!-- JavaScript -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- Default-JavaScript-File -->
+
+	<!-- banner slider -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+       
+
+// Retrieve the object from storage
+
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<!-- //banner slider -->
+
+	<!-- password-script -->
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	<!-- //password-script -->
+
+	<!-- gallery light box -->
+	<script src="js/smoothbox.jquery2.js"></script>
+	<!-- //gallery light box -->
+
+	<!-- smooth scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- //smooth scrolling -->
+
+	<!-- move-top -->
+	<script src="js/move-top.js"></script>
+	<!-- easing -->
+	<script src="js/easing.js"></script>
+	<!--  necessary snippets for few javascript files -->
+	<script src="js/snacks.js"></script>
+
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+	<!-- //Js files -->
+
+</body>
+
+</html>
